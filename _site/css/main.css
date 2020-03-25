@@ -9,7 +9,7 @@ body {
 }
 
 hr {
-  border-color: #B9D9EB;
+  border-color: #e78428;
   border-width: 3px;
   max-width: 50px;
 }
@@ -22,10 +22,10 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #B9D9EB;
+  color: #e78428;
 }
 a:hover, a:focus, a:active {
-  color: #91c3e0;
+  color: #c66b16;
 }
 
 h1,
@@ -44,7 +44,7 @@ p {
 }
 
 .bg-primary {
-  background-color: #B9D9EB;
+  background-color: #e78428;
 }
 
 .bg-dark {
@@ -85,12 +85,12 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #B9D9EB;
+  color: #e78428;
   font-family: Verdana, Geneva, sans-serif;
   font-weight: 700;
 }
 .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
-  color: #91c3e0;
+  color: #c66b16;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
@@ -101,11 +101,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #B9D9EB;
+  color: #e78428;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #B9D9EB !important;
+  color: #e78428 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -136,11 +136,11 @@ aside {
     border-color: rgba(34, 34, 34, 0.5);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #B9D9EB;
+    color: #e78428;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #91c3e0;
+    color: #c66b16;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -148,7 +148,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #B9D9EB;
+    color: #e78428;
   }
 }
 
@@ -237,7 +237,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(185, 217, 235, 0.9);
+  background: rgba(231, 132, 40, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -289,7 +289,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(185, 217, 235, 0.9);
+  background: rgba(231, 132, 40, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -362,7 +362,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-  color: #B9D9EB;
+  color: #e78428;
 }
 
 .no-gutter > [class*='col-'] {
@@ -397,26 +397,26 @@ header .header-content .header-content-inner p {
 
 .btn-primary {
   color: white;
-  background-color: #B9D9EB;
-  border-color: #B9D9EB;
+  background-color: #e78428;
+  border-color: #e78428;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
   color: white;
-  background-color: #a5cee5;
-  border-color: #9dcae3;
+  background-color: #dd7719;
+  border-color: #d47218;
 }
 .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
   background-image: none;
 }
 .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-  background-color: #B9D9EB;
-  border-color: #B9D9EB;
+  background-color: #e78428;
+  border-color: #e78428;
 }
 .btn-primary .badge {
-  color: #B9D9EB;
+  color: #e78428;
   background-color: white;
 }
 
