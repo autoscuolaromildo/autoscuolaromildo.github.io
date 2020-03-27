@@ -1,5 +1,5 @@
 <!-- contact -->
-<section id="contacts" class="contacts">
+<section id="contatti" class="contacts">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -10,15 +10,31 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 text-center">
-                <p class="text-muted padding" color="white">
-                    <b>Autoscuola Romildo</b><br>
-                    Viale Don Minzoni 68-70, 28021 Borgomanero (NO) - ITALIA<br>
-                    email: <a href="mailto:info@dgi.io">info@autoscuola-romildo.it</a>
-                </p> 
+            {% for member in site.data.contacts %}
+            <div class="col-lg-6">
+                <p class="text-muted text-center padding" color="white">
+                    <b>{{ member.name }}</b><br>
+                    {{ member.address }}<br>
+                    tel: {{ member.tel }}<br>
+                    fax: {{ member.fax }}<br>
+                    email: <a href="mailto:info@dgi.io">{{ member.email }}</a><br>
+                </p>
+                <p class="text-muted text-center padding" color="white">
+                    <b>Orari:</b><br>
+                    <b>Lun:</b> {{ member.week_morning }}  {{ member.week_afternoon }}<br>
+                    <b>Mar:</b> {{ member.week_morning }}  {{ member.week_afternoon }}<br>
+                    <b>Mer:</b> {{ member.week_morning }}  {{ member.week_afternoon }}<br>
+                    <b>Gio:</b> {{ member.week_morning }}  {{ member.week_afternoon }}<br>
+                    <b>Ven:</b> {{ member.week_morning }}  {{ member.week_afternoon }}<br>
+                    {% if member.weekend_morning %}
+                    <b>Sab:</b> {{ member.weekend_morning }}<br>
+                    {% else %}
+                    <br>
+                    {% endif %}
+                </p>
                 <!-- Map -->
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.4452395632397!2d8.459291815874236!3d45.702104025557695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47866cfc309cb9f9%3A0xff7f9853470b99c4!2sScuola%20Guida%20Romildo!5e0!3m2!1sen!2sit!4v1582973783715!5m2!1sen!2sit"
+                    src= {{ member.map }}
                     width="100%"
                     height="50%"
                     frameborder="0"
@@ -26,22 +42,7 @@
                     allowfullscreen="">
                 </iframe>
             </div>
-            <div class="col-lg-6 text-center">
-                <p class="text-muted padding" color="white">
-                    <b>Autoscuola Nuova Remigio</b><br>
-                    Via Leonardi, 7, 28024 Gozzano (NO) - ITALIA<br>
-                    email: <a href="mailto:info@dgi.io">info@autoscuola-romildo.it</a>
-                </p> 
-                <!-- Map -->
-                <iframe
-                    src=https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.210824591424!2d8.4342585!3d45.7500893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf92c61a848efc06a!2sAutoscuola%20Nuova%20Remigio!5e0!3m2!1sen!2sit!4v1585174736142!5m2!1sen!2sit"
-                    width="100%"
-                    height="50%"
-                    frameborder="0"
-                    style="border:0;"
-                    allowfullscreen="">
-                </iframe>
-            </div>
+            {% endfor %}
         </div>
     </div>
     

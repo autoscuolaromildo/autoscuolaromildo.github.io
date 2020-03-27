@@ -83,10 +83,13 @@ aside {
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
-    .navbar-header .navbar-brand {
+    .navbar-header 
+    .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
-        font-weight: 700;
+        font-weight: 800;
+        padding: 5px;
+        height: 60px;
         //text-transform: uppercase;
         &:hover,
         &:focus {
@@ -120,7 +123,8 @@ aside {
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: rgba(white, .3);
-        .navbar-header .navbar-brand {
+        .navbar-header 
+        .navbar-brand {
             color: rgba(white, .7);
             &:hover,
             &:focus {
@@ -158,61 +162,97 @@ aside {
 
 // Homepage Header
 
-header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    @include background-cover;
-    background-position: center;
-    background-image: url('../img/header.jpg');
-    text-align: center;
-    color: white;
-    .header-content {
+    // Homepage Header
+    header {
         position: relative;
-        text-align: center;
-        padding: 100px 15px 100px;
         width: 100%;
-        .header-content-inner {
-            h1 {
-                font-weight: 700;
-                //text-transform: capitalize;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-            hr {
-                margin: 30px auto;
-            }
-            p {
-                font-weight: 300;
-                color: rgba(white, .7);
-                font-size: 16px;
-                margin-bottom: 50px;
-            }
-        }
-    }
-    @media (min-width: 768px) {
-        min-height: 100%;
-        .header-content {
+        min-height: auto;
+        @include background-cover;
+        text-align: center;
+        color: black;
+        .bg-wrap {
+            clip: rect(0, auto, auto, 0);
             position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 50px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .bg {
+            background-image: url('../img/header.jpg');
+            position: fixed;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            transform: translateZ(0);
+            will-change: transform;
+        }
+        .header-content {
+            position: relative;
+            text-align: center;
+            padding: 100px 15px 100px;
+            width: 100%;
             .header-content-inner {
-                max-width: 1000px;
-                margin-left: auto;
-                margin-right: auto;
+                img{
+                    background-color: rgba(0, 0, 0, 0.0);
+                }
+                h1 {
+                    //font-weight: 100;
+                    font-size: 50px;
+                    margin-top: 100;
+                    margin-bottom: 100;
+                    color: white;
+                    font-weight: bold;
+                }
+                h2 {
+                    //font-weight: 100;
+                    font-size: 30px;
+                    margin-top: 100;
+                    margin-bottom: 100;
+                    color: white;
+                    //font-weight: bold;
+                }
+                hr {
+                    margin: 30px auto;
+                    border-color: white;
+                }
                 p {
-                    font-size: 18px;
-                    max-width: 80%;
-                    margin-left: auto;
-                    margin-right: auto;
+                    //font-weight: 100;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    display: block;
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.5);
                 }
             }
         }
-    }
-}
+        @media (min-width: 768px) {
+            min-height: 100%;
+            .header-content {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                padding: 0 50px;
+                .header-content-inner {
+                    max-width: 1000px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    p {
+                        font-size: 18px;
+                        max-width: 80%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    } 
 
 // Sections
 
