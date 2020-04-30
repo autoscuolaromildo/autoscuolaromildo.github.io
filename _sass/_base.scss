@@ -165,12 +165,11 @@ aside {
     // Homepage Header
     header {
         position: relative;
-        width: auto;
+        width: 100%;
         min-height: auto;
-        min-width: 50%;
         @include background-cover;
         background-position: center;
-        background-image: url('../img/header.jpg');
+        background-image: url('../img/header.png');
         text-align: center;
         color: white;
         .header-content {
@@ -184,15 +183,18 @@ aside {
                     //text-transform: capitalize;
                     margin-top: 0;
                     margin-bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.1);
                 }
                 hr {
                     margin: 30px auto;
+                    color: rgba(white, .7);
                 }
                 p {
                     font-weight: 300;
                     color: rgba(white, .7);
                     font-size: 16px;
                     margin-bottom: 50px;
+                    background-color: rgba(0, 0, 0, 0.1);
                 }
             }
         }
