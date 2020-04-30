@@ -167,9 +167,10 @@ aside {
         position: relative;
         width: auto;
         min-height: auto;
+        min-width: 50%;
         @include background-cover;
         background-position: center;
-        background-image: url('../img/header.png');
+        background-image: url('../img/header.jpg');
         text-align: center;
         color: white;
         .header-content {
