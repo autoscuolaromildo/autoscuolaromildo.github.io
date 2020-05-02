@@ -16,9 +16,9 @@
                 <p class="text-muted text-center padding" color="white">
                     <b>{{ member.name }}</b><br>
                     {{ member.address }}<br>
-                    tel: {{ member.tel }}<br>
+                    tel: <a href="tel:{{ member.tel }}">{{ member.tel }}</a><br>
                     fax: {{ member.fax }}<br>
-                    email: <a href="mailto:info@dgi.io">{{ member.email }}</a><br>
+                    email: <a href="mailto:{{ member.email }}">{{ member.email }}</a><br>
                 </p>
                 <p class="text-muted text-center padding" color="white">
                     <b>Orari:</b><br>

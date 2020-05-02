@@ -239,17 +239,6 @@ aside {
     margin-top: 0;
 }
 
-.dove-box {
-    max-width: 400px;
-    margin: 50px auto 0;
-    @media (min-width: 992px) {
-        margin: 20px auto 0;
-    }
-    p {
-        margin-bottom: 0;
-    }
-}
-
 .album-box {
     position: relative;
     display: block;
@@ -379,14 +368,52 @@ aside {
     background-image: url('../img/background.png');
 }
 
-.rsvp {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    @include background-cover;
-    background-position: center;
-    background-image: url('../img/rsvp.jpg');
+// Homepage Footer
+footer {
+    padding: 25px 0;
+    background-color: #cecece;
     text-align: center;
+
+    .list-inline-item {
+        position: center;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        line-height: 130px;
+        text-align: center;
+        }
+
+    p{
+        color:white;
+        font-size: 10px;
+    }
+
+    ul.social-buttons {
+        margin-bottom: 0;
+        li {
+            a {
+            font-size: 15px;
+            line-height: 40px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            color: $theme-primary;
+            border-radius: 100%;
+            outline: none;
+            background-color: #cecece;
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: $theme-primary;
+                color: white
+            }
+
+            }
+        }
+    }
 }
 
 // Bootstrap Overrides
