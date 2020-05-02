@@ -37,7 +37,9 @@ h6 {
     @include sans-serif-font;
 }
 
-p {
+p,
+ul,
+li {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -363,21 +365,18 @@ aside {
     }
 }
 
-.story {
+.story,
+.contacts,
+.servizi {
         position: relative;
         width: 100%;
         min-height: auto;
         @include background-cover;
         background-position: center;
-        background-image: url('../img/background.png');
 }
 
-.contacts {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    @include background-cover;
-    background-position: center;
+.story {
+    background-image: url('../img/background.png');
 }
 
 .rsvp {
