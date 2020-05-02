@@ -17,7 +17,11 @@
                     <b>{{ member.name }}</b><br>
                     {{ member.address }}<br>
                     tel: <a href="tel:{{ member.tel }}">{{ member.tel }}</a><br>
-                    fax: {{ member.fax }}<br>
+                    {% if member.fax %}
+                        fax: {{ member.fax }}<br>
+                    {% else %}
+                        <br>
+                    {% endif %}
                     email: <a href="mailto:{{ member.email }}">{{ member.email }}</a><br>
                 </p>
                 <p class="text-muted text-center padding" color="white">
