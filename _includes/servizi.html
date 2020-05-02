@@ -7,45 +7,22 @@
                 <p>
                     I servizi della nostra <b>Scuola Guida</b>:
                     <ul>
+                        {% for member in site.data.servizi_scuola %}
                         <li>
-                            Corsi teorici e pratici per patenti di tutte le categorie
+                            {{ member.servizio }}
                         </li>
-                        <li>
-                            Corsi recupero punti per patenti di tutte le categorie
-                        </li>
-                        <li>
-                            Corsi rdi conseguimento e di rinnovo C.Q.C (Carte di Qualificazione del Conducente)
-                        </li>
-                        <li>
-                            Rinnovo patenti di tutte le categorie con medico in sede
-                        </li>
-                        <li>
-                            Duplicati patenti per smarrimento e deterioramento
-                        </li>
-                        <li>
-                            Prenotazioni di visite mediche per patenti speciali presso la C.M.L di Novara
-                        </li>
-                        <li>
-                            Rilascio e rinnovo della carta del conducente per cronotachigrafo digitale
-                        </li>
-                        <li>
-                            Pratiche auto/moto di ogni tipo (Immatricolazioni, trasferimenti di proprietà)
-                        </li>
+                        {% endfor %}
                     </ul>
                 </p>
                 <br>
                 <p>
                     I servizi della nostra <b>Agenzia pratiche auto</b>:
-                    <ul>    
+                    <ul>
+                        {% for member in site.data.servizi_agenzia %}
                         <li>
-                            Prenotazione di revisioni e di collaudi presso la Motorizzazione di Novara
+                            {{ member.servizio }}
                         </li>
-                        <li>
-                            Visure PRA
-                        </li>
-                        <li>
-                            Visure CCIAA
-                        </li>
+                        {% endfor %}
                     </ul>
                 </p>
                 <br>
